@@ -1,1 +1,8 @@
-# AWS_Infra_TF
+## Background
+
+This is a simple project to setup a Python app on AWS. 
+
+There are 3 components for the project: 
+* Setup Infrastructure using Terraform
+* Setup CICD using Github action
+* Initalise simple Python app on the environment
