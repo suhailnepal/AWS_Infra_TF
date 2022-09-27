@@ -1,4 +1,6 @@
 variable "region" {
+    type = string
+    default = "ap-southeast-2"
 }
 
 variable "profile" {
@@ -29,4 +31,17 @@ variable "public_subnets" {
 variable "private_subnets" {
   type    = list(string)
   default = ["10.50.61.0/24", "10.50.62.0/24", "10.50.63.0/24"]
+}
+
+variable "ami_id" {
+    type = string
+    default = "ami-067e6178c7a211324"
+}
+
+variable "key_pair" {
+}
+
+variable "instance_type" {
+    type = string
+    default = "t3a.micro"
 }

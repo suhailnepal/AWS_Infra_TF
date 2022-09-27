@@ -1,3 +1,3 @@
 ## Input
 
-region = "ap-southeast-2"
+key_pair = "Suhail-Dell"
