@@ -5,9 +5,13 @@ terraform {
       version = "~> 4.0"
     }
   }
+  backend "s3" {
+    bucket = "ssandbox-terraform-state"
+    region = "ap-southeast-2"
+  }
 }
 
-# Configure the AWS Provider
 provider "aws" {
     region = var.region
+    profile = var.profile
 }
