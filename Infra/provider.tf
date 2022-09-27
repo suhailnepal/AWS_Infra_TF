@@ -6,12 +6,13 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "ssandbox-terraform-state"
-    region = "ap-southeast-2"
+    bucket         = "ssandbox-terraform-state"
+    region         = "ap-southeast-2"
+    dynamodb_table = "ssandbox-state-lock-dynamo"
   }
 }
 
 provider "aws" {
-    region = var.region
-    profile = var.profile
+  region  = var.region
+  profile = var.profile
 }
