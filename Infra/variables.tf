@@ -43,5 +43,10 @@ variable "key_pair" {
 
 variable "instance_type" {
     type = string
-    default = "t3a.micro"
+    default = "t3a.small"
+}
+
+variable "vol_size" {
+    type = number
+    default = 1
 }
