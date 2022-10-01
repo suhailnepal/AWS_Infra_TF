@@ -1,6 +1,6 @@
 variable "region" {
-    type = string
-    default = "ap-southeast-2"
+  type    = string
+  default = "ap-southeast-2"
 }
 
 variable "profile" {
@@ -34,19 +34,19 @@ variable "private_subnets" {
 }
 
 variable "ami_id" {
-    type = string
-    default = "ami-067e6178c7a211324"
+  type    = string
+  default = "ami-067e6178c7a211324"
 }
 
 variable "key_pair" {
 }
 
 variable "instance_type" {
-    type = string
-    default = "t3a.small"
+  type    = string
+  default = "t3a.small"
 }
 
 variable "vol_size" {
-    type = number
-    default = 1
+  type    = number
+  default = 1
 }
