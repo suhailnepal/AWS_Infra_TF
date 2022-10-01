@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - Pipeline
+      - '*.html'
 
 jobs:
   tf_fmt:
