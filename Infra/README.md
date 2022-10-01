@@ -9,3 +9,5 @@ The following resources are created:
 * VPC - with CIDR range 10.50.0.0/16
 * EC2 instance - in private subnet with a security group
 * ALB - Public facing application load balancer with target group and listener
+
+![Image](image.png)
