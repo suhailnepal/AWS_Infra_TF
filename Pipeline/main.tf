@@ -6,7 +6,7 @@ provider "aws" {
 }
 
 terraform {
-  required_version = ">=1.3.0"
+  required_version = ">=0.14.9"
    backend "s3" {
        bucket = "suhail-pipeline-test"
        key = "default"
