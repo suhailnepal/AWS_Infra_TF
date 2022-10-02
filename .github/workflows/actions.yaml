@@ -11,8 +11,6 @@ jobs:
   tf_fmt:
     name: Deploy Site
     runs-on: ubuntu-latest
-    with:
-      terraform_version: 1.3.1
     steps:
 
     - name: Checkout Repo
@@ -20,6 +18,8 @@ jobs:
 
     - name: Terraform Init
       uses: hashicorp/terraform-github-actions/init@v0.4.0
+      with:
+      terraform_version: 1.3.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TF_ACTION_WORKING_DIR: 'Pipeline'
@@ -31,6 +31,8 @@ jobs:
 
     - name: Terraform Apply
       uses: hashicorp/terraform-github-actions/apply@v0.4.0
+      with:
+      terraform_version: 1.3.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TF_ACTION_WORKING_DIR: 'Pipeline'
