@@ -12,6 +12,6 @@ terraform {
 }
 
 provider "aws" {
-  region  = var.region
   version = "~>3.0"
+  region = "ap-southeast-2"
 }
