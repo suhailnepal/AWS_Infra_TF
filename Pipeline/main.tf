@@ -1,4 +1,4 @@
-## Main with Backend S3..
+## Main with Backend S3
 
 provider "aws" {
   version = "~>3.0"
