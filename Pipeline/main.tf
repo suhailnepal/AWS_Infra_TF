@@ -1,7 +1,7 @@
 ## Main with Backend S3
 
 provider "aws" {
-  version = "~>2.0"
+  version = "~> 4.0"
   region  = "ap-southeast-2"
 }
 
