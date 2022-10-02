@@ -25,18 +25,17 @@ jobs:
 
     - name: Terraform Validate
       id: validate
+      working-directory: ./Pipeline
       run: terraform validate
 
     - name: Terraform Init
       id: init
+      working-directory: ./Pipeline
       run: terraform init
-    
-    - name: Terraform Plan
-      id: plan
-      run: terraform plan 
 
     - name: Terraform Apply
       id: apply
+      working-directory: ./Pipeline
       run: terraform apply -auto-approve
 
 
